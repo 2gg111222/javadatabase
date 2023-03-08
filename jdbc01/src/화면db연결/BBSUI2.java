@@ -9,9 +9,9 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-public class BBSUI {
+public class BBSUI2 {
 
-	public static void main(String[] args) {
+	public  void c() {
 		JFrame f = new JFrame();
 		f.setTitle("나의 게시판 화면");
 		f.setSize(700, 500);

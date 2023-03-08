@@ -12,10 +12,10 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
-import 자바db연결.MEMBERDAO2;
+import 자바db연결.MEMBERDAO3;
 
-public class MemberUI {
-
+public class MemberUI2 {
+	//MEMBERDAO3와 연동
 	public static void main(String[] args) {
 		JFrame f = new JFrame();
 		f.setTitle("나의 회원가입 화면");
@@ -51,8 +51,19 @@ public class MemberUI {
 				if(id.equals("")) { //기본형 4가지만 == 로 값을 비교 가능! 
 					JOptionPane.showMessageDialog(f, "id는 필수입력항목입니다.");
 				}
-				MEMBERDAO2 dao = new MEMBERDAO2();
-				int result = dao.insert(id, pw, name, tel);//1 or 0
+				MEMBERDAO3 dao = new MEMBERDAO3();
+				
+				//1. 가방을 만들어주세요
+				MemberVO bag = new MemberVO();
+				//2. 가방에 값들을 넣어주세요.
+				bag.setID(id);
+				bag.setPw(pw);
+				bag.setName(name);
+				bag.setTel(tel);
+				
+				//3. 값들이 들어있는 가방을 전달하자.
+				int result = dao.insert(bag);//1 or 0
+				
 				if(result == 1) {
 					JOptionPane.showMessageDialog(f, "회원가입 성공");
 				}else {
@@ -69,7 +80,9 @@ public class MemberUI {
 				System.out.println("회원탈퇴처리");
 				String id = t1.getText();
 
-				MEMBERDAO2 dao = new MEMBERDAO2();
+				MEMBERDAO3 dao = new MEMBERDAO3();
+				
+				
 				int result = dao.delete(id);
 				if(result == 1) {
 					JOptionPane.showMessageDialog(f, "회원탈퇴 성공");
@@ -88,8 +101,15 @@ public class MemberUI {
 				String id = t1.getText();
 				String tel = t4.getText();
 
-				MEMBERDAO2 dao = new MEMBERDAO2();
-				int result = dao.update(id, tel);
+				MEMBERDAO3 dao = new MEMBERDAO3();
+				//1.가방을 만들자.
+				MemberVO bag = new MemberVO();
+				//2.가방에 값을 넣자.
+				bag.setID(id);
+				bag.setTel(tel);
+				
+				//3.가방을 전달하자
+				int result = dao.update(bag);
 				if(result == 1) {
 					JOptionPane.showMessageDialog(f, "회원수정 성공");
 				}else {

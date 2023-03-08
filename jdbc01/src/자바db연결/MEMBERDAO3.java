@@ -4,9 +4,11 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
-public class MEMBERDAO2 {
+import 화면db연결.MemberVO;
+
+public class MEMBERDAO3 {
 	public int delete(String id){
-		
+		//MemberUI2와 연동
 		int result = 0;
 		
 		try {
@@ -51,7 +53,7 @@ public class MEMBERDAO2 {
 		return result;	
 	}
 	
-	public int update(String id, String tel){
+	public int update(MemberVO bag){
 		
 		int result = 0;
 		
@@ -79,8 +81,8 @@ public class MEMBERDAO2 {
 
 			String sql = "update hr.MEMBER set tel = ? where id = ?";
 			PreparedStatement ps = con.prepareStatement(sql);
-			ps.setString(1, tel);
-			ps.setString(2, id);
+			ps.setString(1, bag.getTel());
+			ps.setString(2, bag.getId());
 			//con부품 으로 sql스트링에 있는 것 SQL부품으로 만들어주세요.
 			System.out.println("3.SQL문 부품(객체)으로 만들어주기.");
 			
@@ -97,7 +99,7 @@ public class MEMBERDAO2 {
 	}
 	
 	//public void add2() {
-	public int insert(String id,String pw,String name,String tel) {
+	public int insert(MemberVO bag) {
 		int result =0;
 		
 		try {
@@ -131,10 +133,11 @@ public class MEMBERDAO2 {
 			//언어 R빼고, 인덱스 0부터 시작!!
 			//유일하게 DB는 인덱스가 1부터 시작!!
 			
-			ps.setString(1, id);
-			ps.setString(2, pw);
-			ps.setString(3, name);
-			ps.setString(4, tel);
+			//2. 가방에서 값들을 하나씩 꺼내쓰세요.
+			ps.setString(1, bag.getId());
+			ps.setString(2, bag.getPw());
+			ps.setString(3, bag.getName());
+			ps.setString(4, bag.getTel());
 			//==> insert into hr.MEMBER values ('a','a','a','a');
 			
 			System.out.println("3. SQL문 부품(객체)으로 만들어주기.");
