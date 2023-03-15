@@ -5,7 +5,7 @@
 <title>Insert title here</title>
 <script type="text/javascript">
 
-	alert('경고, 삭제페이지입니다')
+	alert('update페이지입니다')
 
 </script>
 <style type="text/css">
@@ -31,20 +31,24 @@ button {
 </style>
 </head>
 <body>
-	<h3>삭제 페이지</h3>
+	<h3>update 페이지</h3>
 	<hr>
 	<a href="member.html">
 		<button id = "b1">첫페이지로</button>
 		</a>
-		<form action="delete.jsp">
+		<form action="update.jsp">
 		<table border="1">
 			<tr>
 				<td class="t1">아이디 :</td>
 				<td><input name="id"></td>
 			</tr>
 			<tr>
+				<td class="t1">회원전화 :</td>
+				<td><input name="tel"></td>
+			</tr>
+			<tr>
 				<td colspan="2" class="t1">
-					<button id="b2">회원정보삭제 데이터 전송</button>
+					<button id="b2">회원정보수정 데이터 전송</button>
 				</td>
 			</tr>
 		</table>
