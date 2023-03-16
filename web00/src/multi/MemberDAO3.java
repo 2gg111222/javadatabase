@@ -32,7 +32,7 @@ public class MemberDAO3 {
 			String user = "root";
 			String password = "1234";
 			Connection con = DriverManager.getConnection(url, user, password);
-			System.out.println("2.오라클 연결 성공.");
+			System.out.println("2.mySQL 연결 성공.");
 		
 			
 			//ipaddress => InetAddress
@@ -51,7 +51,7 @@ public class MemberDAO3 {
 			
 			
 			rs = ps.executeQuery(); //select문 전송시
-			System.out.println("4.SQL문 오라클로 보내기 성공");
+			System.out.println("4.SQL문 mySQL로 보내기 성공");
 			if (rs.next()) { // 검색결과가 있는지 여부는 rs.next()
 				//true이면 있다라는 의미, false이면 없다라는 의미
 				System.out.println("검색결과 있음, 검색 성공");
@@ -94,7 +94,8 @@ public class MemberDAO3 {
 			String user = "root";
 			String password = "1234";
 			Connection con = DriverManager.getConnection(url, user, password);
-			System.out.println("2.오라클 연결 성공.");
+			System.out.println("2.mySQL 연결 성공.");
+		
 		
 			
 			//ipaddress => InetAddress
@@ -114,7 +115,7 @@ public class MemberDAO3 {
 			System.out.println("3.SQL문 부품(객체)으로 만들어주기.");
 			
 			result = ps.executeUpdate();
-			System.out.println("4.SQL문 오라클로 보내기 성공");
+			System.out.println("4.SQL문 mySQL로 보내기 성공");
 			if (result == 1 ) {
 				System.out.println("탈퇴 성공");
 			}
@@ -231,6 +232,7 @@ public class MemberDAO3 {
 		System.out.println(result);
 		return result;
 	}
+	
 	public ArrayList<MemberVO> list() {
 		ResultSet rs = null; //항목명 + 결과 데이터를 담고 있는 테이블 
 		
@@ -253,7 +255,7 @@ public class MemberDAO3 {
 			String password = "1234";
 			Connection con = DriverManager.getConnection(url, user, password); //Connection
 			//String data = JOptionPane.showInputDialog("이름입력"); //String, 임아무개 
-			System.out.println("2. 오라클 연결 성공.");
+			System.out.println("2. mySQL 연결 성공.");
 			
 			//ipaddress ==> InetAddress
 			//String url = "http://wwww.naver.com";
@@ -294,6 +296,9 @@ public class MemberDAO3 {
 				//4. list에 bag을 추가해주자.
 				list.add(bag);
 			}
+			ps.close();
+			rs.close();
+			con.close();
 			//System.out.println(result);
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -1,3 +1,5 @@
+<%@page import="multi.BbsVO"%>
+<%@page import="multi.BBSDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!-- 	 1. 전달된 값 받아주세요.(request이용) -->
@@ -9,6 +11,15 @@
 		 String no = request.getParameter("no");
 		 String content = request.getParameter("content");
 		
+		 //1. 받은 데이터를 위해 가방을 만들어서 주자.
+		 BbsVO bag = new BbsVO();
+		 bag.setNo(Integer.parseInt(no));
+		 bag.setContent(content);
+		 
+		 //2.dao에게 가방을 전달하면서 insert 해달라고 하자.
+		 BBSDAO dao = new BBSDAO();
+		 dao.update(bag);
+		 
 				 %>
 				 
 		<!--  2. dao에게 값 전달.(dao이용) 생략 -->

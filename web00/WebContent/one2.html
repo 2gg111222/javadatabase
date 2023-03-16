@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script type="text/javascript">
-
-	//alert(' 수정페이지입니다')
+//클라이언트가 입력한 no를 서버에서 받아주기
+	//alert('경고, 삭제페이지입니다')
 
 </script>
 <style type="text/css">
@@ -31,27 +31,28 @@ button {
 </style>
 </head>
 <body>
-	<h3>업데이트 페이지</h3>
+	<h3>검색 페이지</h3>
 	<hr>
-	
 	<a href="bbs.html">
-		<button id = "b1">첫페이지로</button>
-		</a>
-		<form action="update2.jsp">
+		<button id="b1">첫페이지로</button>
+	</a><hr>
+<!--a태그는 무조건 get방식 요청 -->
+<a href="http://localhost:8888/web00/one2.jsp?no=5">
+	<button>5 게시물</button>
+</a>
+<hr>
+	<form action="one2.jsp" method ="get"> 
+	<!-- get: 어떤 게 전송되는지 노출됨, 비밀번호 같은 건 보내면 안됨, 가장 많이쓰는 방법임 -->
+	<!-- http://localhost:8888/web00/delete2.jsp?no=100 -->
 		<table border="1">
-		
 			<tr>
-				<td class="t1">번호 :</td>
+				<td class="t1">검색할 번호 :</td>
 				<td><input name="no"></td>
 			</tr>
 			
 			<tr>
-				<td class="t1">내용 :</td>
-				<td><input name="content"></td>
-			</tr>
-			<tr>
 				<td colspan="2" class="t1">
-					<button id="b2">게시판글쓰기 데이터 전송</button>
+					<button id="b2">게시판 검색할 no 데이터 전송</button>
 				</td>
 			</tr>
 		</table>
