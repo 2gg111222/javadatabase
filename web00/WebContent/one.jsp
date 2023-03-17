@@ -20,11 +20,11 @@ MemberVO bag = dao.one(id);
 	당신이 검색을 원하는 아이디는
 	<%=id%>
 	<hr color="red">
-	검색한 제목:
+	검색한 pw:
 	<%=bag.getPw()%>
-	<br> 검색한 내용:
+	<br> 검색한 이름:
 	<%=bag.getName()%>
-	<br> 검색한 글쓴이 :
+	<br> 검색한 전화번호 :
 	<%=bag.getTel()%>
 	<br>
 </body>

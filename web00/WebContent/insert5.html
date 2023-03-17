@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//alert('영화등록 페이지입니다. 반갑습니다.!')
+</script>
+<style type="text/css">
+body { /* 컨트롤 + / - 자동주석, 태그선택! */
+	background: gold;
+}
+
+button {
+	background: pink;
+}
+
+.t1 { /* .은 클래스 선택!, 여러개선택!  */
+	background: yellow;
+	width: 150px;
+	text-align: center;
+}
+
+#b1 { /* #은 아이디 선택!, 특정한 것 한 개만 선택! */
+	color: red;
+}
+#b2{
+	color: blue;
+	
+}
+</style>
+</head>
+<body>
+	<h3>선수등록 페이지</h3>
+	<hr>
+	<a href="list5.jsp">
+		<button id="b1">선수명단페이지로</button>
+	</a>
+	</a>
+	<a href="delete5.html">
+		<button id="b1">선수명단삭제 페이지로</button>
+	</a>
+	<a href="update5.html">
+		<button id="b1">선수명단수정 페이지로</button>
+	</a>
+	<a href="one5.html">
+		<button id="b1">선수 상세페이지로</button>
+	</a>
+	<!--  form의 액션은 무조건 jsp파일 이어야함 -->
+	<form action="insert5.jsp">
+		<table border="1">
+			<tr>
+				<td class="t1">백넘버:</td>
+				<td><input name="backnumber"></td>
+			</tr>
+			<tr>
+				<td class="t1">이름 :</td>
+				<td><input name="name"></td>
+			</tr>
+			<tr>
+				<td class="t1">키 :</td>
+				<td><input name="height"></td>
+			</tr>
+			<tr>
+				<td class="t1">체중 :</td>
+				<td><input name="weight"></td>
+			</tr>
+			<tr>
+				<td class="t1">팀 :</td>
+				<td><input name="team"></td>
+			</tr>
+			<tr>
+				<td class="t1">이미지 :</td>
+				<td><input name="img"></td>
+			</tr>
+			<tr>
+				<td colspan="2" class="t1">
+					<button id="b2">선수등록 데이터 전송</button>
+				</td>
+			</tr>
+		</table>
+		
+		<!-- 입력한 값들이 서버(톰킷)으로 전달될때는 form태그 안에 있어야 함. -->
+	</form>
+	보충내용: <input name="data">
+</body>
+</html>
