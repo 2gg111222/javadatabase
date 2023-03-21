@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function 글자수() {
+		id = document.getElementById("user").value
+		divTag = document.getElementById("result")
+		if (id.length >= 5){
+			//divTag.innerHTML = "<img src=img/yes.jpg width=300 height=200>"
+		}else {
+			divTag.innerHTML = '<img src=img/no.jpg width=300 height=200>'
+		}
+
+	}
+	
+	function pw() {
+		pw1 = document.getElementById("pw").value
+		pw2 = document.getElementById("pw2").value
+		divTag = document.getElementById("result")
+		if (pw1 == pw2){
+		
+			divTag.innerHTML = "<img src=img/yes.jpg width=300 height=200>"
+		}else {
+			divTag.innerHTML = '<img src=img/no.jpg width=300 height=200>'
+		}
+
+	}
+	
+</script>
+</head>
+<body>
+	아이디:
+	<input id="user" value="test">
+	<button onclick = "글자수()"> 글자수 체크 </button>
+	<br>
+	<hr>
+	패스워드 :
+	<input id="pw" value="test">
+	<br> 패스워드2
+	<input id="pw2" value="test">
+	<button onclick="pw()">패스워드 동일</button>
+	<hr color="red">
+
+	<hr>
+	<div id="result"
+		style="color: red; background: yellow; width: 500px; height: 50px; font-size: 30px">결과넣는
+		곳.</div>
+</body>
+</html>
