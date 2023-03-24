@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src = "js/jquery-3.6.4.js"></script>
+<script type="text/javascript">
+  $(function() {
+	$('#b1').click(function() {
+		$.ajax({
+			url : "data/dataser(1)",
+			success : function(doc) {
+				alert("xml 요청 성공" + doc)
+				list =$(doc).find("record")
+				
+			}
+		})
+	})
+  })
+
+
+</script>
+</head>
+<body>
+<button id = 'b1'>xml받기</button>
+</body>
+</html>

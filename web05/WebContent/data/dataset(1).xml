@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+	<record>
+		<id>1</id>
+		<name>Tartar control plus</name>
+		<company>CVS Pharmacy, Inc</company>
+		<code>59779-855</code>
+	</record>
+	<record>
+		<id>2</id>
+		<name>False Ragweed</name>
+		<company>Antigen Laboratories, Inc.</company>
+		<code>49288-0203</code>
+	</record>
+	<record>
+		<id>3</id>
+		<name>NU-DERM STARTER SET NORMAL-DRY</name>
+		<company>OMP, INC.</company>
+		<code>62032-504</code>
+	</record>
+	<record>
+		<id>4</id>
+		<name>Strattera</name>
+		<company>Carilion Materials Management</company>
+		<code>68151-4488</code>
+	</record>
+	<record>
+		<id>5</id>
+		<name>Horse Fly</name>
+		<company>Nelco Laboratories, Inc.</company>
+		<code>36987-1808</code>
+	</record>
+	<record>
+		<id>6</id>
+		<name>Rheumaforce</name>
+		<company>Apotheca Company</company>
+		<code>57520-0704</code>
+	</record>
+	<record>
+		<id>7</id>
+		<name>NightTime Liquid Caps Multi-Symptom Flu Cold</name>
+		<company>Salado Sales, Inc.</company>
+		<code>57243-535</code>
+	</record>
+	<record>
+		<id>8</id>
+		<name>Pain Relief Rub</name>
+		<company>Avaria Health &amp; Beauty Corp</company>
+		<code>43493-0001</code>
+	</record>
+	<record>
+		<id>9</id>
+		<name>Somnitabs</name>
+		<company>GREAT LAKES WHOLESALE, MARKETING, &amp; SALES, INC.</company>
+		<code>64092-010</code>
+	</record>
+	<record>
+		<id>10</id>
+		<name>PC537 E-2 BRUTE</name>
+		<company>CARROLL COMPANY</company>
+		<code>10685-537</code>
+	</record>
+	<record>
+		<id>11</id>
+		<name>pain relief</name>
+		<company>Kroger Company</company>
+		<code>30142-397</code>
+	</record>
+	<record>
+		<id>12</id>
+		<name>TOPCARE</name>
+		<company>TOPCO ASSOCIATES LLC</company>
+		<code>36800-258</code>
+	</record>
+	<record>
+		<id>13</id>
+		<name>DEXAMETHASONE SODIUM PHOSPHATE</name>
+		<company>Pfizer Laboratories Div Pfizer Inc</company>
+		<code>0069-4547</code>
+	</record>
+	<record>
+		<id>14</id>
+		<name>Carbamazepine</name>
+		<company>Golden State Medical Supply, Inc.</company>
+		<code>60429-120</code>
+	</record>
+	<record>
+		<id>15</id>
+		<name>D1 Organ Support</name>
+		<company>Restivo Chiropractic</company>
+		<code>61062-0001</code>
+	</record>
+	<record>
+		<id>16</id>
+		<name>Ondansetron Hydrochloride</name>
+		<company>Aidarex Pharmaceuticals LLC</company>
+		<code>33261-417</code>
+	</record>
+	<record>
+		<id>17</id>
+		<name>Octreotide Acetate</name>
+		<company>Bedford Laboratories</company>
+		<code>55390-162</code>
+	</record>
+	<record>
+		<id>18</id>
+		<name>G.M. Collin Acne</name>
+		<company>Laboratoires Dermo Cosmetik Inc</company>
+		<code>64127-075</code>
+	</record>
+	<record>
+		<id>19</id>
+		<name>Ondansetron</name>
+		<company>Mylan Institutional Inc.</company>
+		<code>51079-525</code>
+	</record>
+	<record>
+		<id>20</id>
+		<name>Diethylpropion HCl Immediate-Release</name>
+		<company>Actavis Pharma, Inc.</company>
+		<code>0591-0783</code>
+	</record>
+	<record>
+		<id>21</id>
+		<name>Isosorbide Dinitrate</name>
+		<company>Bryant Ranch Prepack</company>
+		<code>63629-2573</code>
+	</record>
+	<record>
+		<id>22</id>
+		<name>Meloxicam</name>
+		<company>Teva Pharmaceuticals USA Inc</company>
+		<code>0093-7299</code>
+	</record>
+	<record>
+		<id>23</id>
+		<name>Phytonadione</name>
+		<company>General Injectables &amp; Vaccine, Inc</company>
+		<code>52584-140</code>
+	</record>
+	<record>
+		<id>24</id>
+		<name>Oral-B Minute-Foam Strawberry</name>
+		<company>Oral-B Laboratories</company>
+		<code>0041-0346</code>
+	</record>
+	<record>
+		<id>25</id>
+		<name>CARYA OVATA POLLEN</name>
+		<company>ALK-Abello, Inc.</company>
+		<code>0268-6716</code>
+	</record>
+	<record>
+		<id>26</id>
+		<name>Tobacco Withdrawal</name>
+		<company>Newton Laboratories, Inc.</company>
+		<code>55714-4539</code>
+	</record>
+	<record>
+		<id>27</id>
+		<name>good neighbor pharmacy childrens pain relief plus</name>
+		<company>Amerisource Bergen</company>
+		<code>24385-986</code>
+	</record>
+	<record>
+		<id>28</id>
+		<name>Dolce and Gabbana The Lift Foundation Amber 148</name>
+		<company>Procter &amp; Gamble Manufacturing Company</company>
+		<code>37000-902</code>
+	</record>
+	<record>
+		<id>29</id>
+		<name>NovoSeven</name>
+		<company>Novo Nordisk</company>
+		<code>0169-7208</code>
+	</record>
+	<record>
+		<id>30</id>
+		<name>Infants Pain and Fever</name>
+		<company>CVS Pharmacy</company>
+		<code>59779-429</code>
+	</record>
+	<record>
+		<id>31</id>
+		<name>Molds, Rusts and Smuts, Phoma herbarum</name>
+		<company>Jubilant HollisterStier LLC</company>
+		<code>65044-5222</code>
+	</record>
+	<record>
+		<id>32</id>
+		<name>amlodipine besylate and atorvastatin calcium</name>
+		<company>Ranbaxy Pharmaceuticals Inc</company>
+		<code>63304-587</code>
+	</record>
+	<record>
+		<id>33</id>
+		<name>Chromic Chloride</name>
+		<company>American Regent, Inc.</company>
+		<code>0517-6310</code>
+	</record>
+	<record>
+		<id>34</id>
+		<name>Wal-Phed PE</name>
+		<company>WALGREEN CO.</company>
+		<code>0363-5440</code>
+	</record>
+	<record>
+		<id>35</id>
+		<name>Yes to Carrots</name>
+		<company>Autumn Harp</company>
+		<code>51514-0221</code>
+	</record>
+	<record>
+		<id>36</id>
+		<name>Diazepam</name>
+		<company>Teva Pharmaceuticals USA Inc</company>
+		<code>0093-6138</code>
+	</record>
+	<record>
+		<id>37</id>
+		<name>Sei Bella Age-Defying Liquid Foundation</name>
+		<company>Melaleuca Inc.</company>
+		<code>54473-233</code>
+	</record>
+	<record>
+		<id>38</id>
+		<name>Povidone Iodine Impregnated</name>
+		<company>Jiangsu Province JianErKang Medical Dressing Co. ,Ltd.
+		</company>
+		<code>34645-4010</code>
+	</record>
+	<record>
+		<id>39</id>
+		<name>Saline Laxative</name>
+		<company>McKesson</company>
+		<code>49348-005</code>
+	</record>
+	<record>
+		<id>40</id>
+		<name>Levetiracetam</name>
+		<company>Clinical Solutions Wholesale</company>
+		<code>58118-0114</code>
+	</record>
+	<record>
+		<id>41</id>
+		<name>esika</name>
+		<company>Ventura Corporation LTD.</company>
+		<code>13537-437</code>
+	</record>
+	<record>
+		<id>42</id>
+		<name>Brom Tapp DM</name>
+		<company>Rij Pharmaceutical Corporation</company>
+		<code>53807-530</code>
+	</record>
+	<record>
+		<id>43</id>
+		<name>Cuprimine</name>
+		<company>Aton Pharma, Inc.</company>
+		<code>25010-705</code>
+	</record>
+	<record>
+		<id>44</id>
+		<name>Isopropyl alcohol Prep Pad</name>
+		<company>Major Pharmaceuticals</company>
+		<code>0904-4277</code>
+	</record>
+	<record>
+		<id>45</id>
+		<name>TERUFLEX Blood Bag System with Diversion Blood Sampling Arm
+			Anticoagulant Citrate Phosphate Dextrose (CPD) AND OPTISOL (AS-5) Red
+			Cell Preservative</name>
+		<company>Terumo Corporation</company>
+		<code>53877-008</code>
+	</record>
+	<record>
+		<id>46</id>
+		<name>Mental Alertness For Seniors</name>
+		<company>King Bio Inc.</company>
+		<code>57955-1561</code>
+	</record>
+	<record>
+		<id>47</id>
+		<name>Treatment Set TS340826</name>
+		<company>Antigen Laboratories, Inc.</company>
+		<code>49288-0812</code>
+	</record>
+	<record>
+		<id>48</id>
+		<name>Follistim AQ</name>
+		<company>Organon USA Inc.</company>
+		<code>0052-0326</code>
+	</record>
+	<record>
+		<id>49</id>
+		<name>Bactestat</name>
+		<company>Energique, Inc.</company>
+		<code>44911-0054</code>
+	</record>
+	<record>
+		<id>50</id>
+		<name>Norepinephrine Bitartrate</name>
+		<company>Cantrell Drug Company</company>
+		<code>52533-165</code>
+	</record>
+</dataset>
