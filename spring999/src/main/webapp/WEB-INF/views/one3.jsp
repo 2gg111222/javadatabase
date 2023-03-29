@@ -16,9 +16,9 @@ body {
 	<!-- bag.getId()  -->
 <%--model의 속성으로 전달받은 bag은 EL로 출력한다. --%>
 ${bag.id} <br><!-- 출력용(expression language-EL)  -->
-${bag.pw} <br>
 ${bag.name} <br>
-${bag.tel} <br>
-	
+${bag.url} <br>
+<img src = "resources/img/${bag.img}"> <br>
+
 </body>
 </html>

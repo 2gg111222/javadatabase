@@ -150,7 +150,7 @@ public class BbsDAO {
 
 	
 
-	public BbsVO one(int no) {
+	public BbsVO one(String no) {
 
 		ResultSet rs = null; // 항목명 + 결과 데이터를 담고 있는 테이블
 
@@ -188,7 +188,7 @@ public class BbsDAO {
 
 			PreparedStatement ps = con.prepareStatement(sql); // PreparedStatement
 
-			ps.setInt(1, no);
+			ps.setString(1, no);
 
 			System.out.println("3. SQL문 부품(객체)으로 만들어주기 성공.");
 
@@ -204,25 +204,17 @@ public class BbsDAO {
 				System.out.println("검색결과 있음. 성공.");
 
 				int no2 = rs.getInt(1); // no
-
 				String title = rs.getString(2); // title
-
 				String content = rs.getString(3); // content
-
 				String writer = rs.getString(4); // writer
-
 				System.out.println(no2 + " " + title + " " + content + " " + writer);
 
 				// 검색결과를 검색화면 UI부분을 주어야 함.
 
 				bag = new BbsVO();
-
 				bag.setNo(no2);
-
 				bag.setTitle(title);
-
 				bag.setContent(content);
-
 				bag.setWriter(writer);
 
 			} else {

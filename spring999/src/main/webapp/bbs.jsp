@@ -8,6 +8,12 @@
 </head>
 <body>
 <h3>게시판 글쓰기. </h3>
+
+<form action = "one2.multi" method = "get">
+	no : <input name = "no" value = "1">
+	<button type = "submit"> 서버로 전송 </button>
+</form>
+
 <hr color="red">
 <form action="insert2.multi" method="get">
 	no : <input name="no" value="1"><br>

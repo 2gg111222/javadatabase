@@ -2,6 +2,7 @@ package com.multi.mvc04;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller //스프링에서 제어하는 역할로 등록! 
@@ -55,8 +56,9 @@ public class BbsController {
 	}
 	
 	@RequestMapping("one2.multi")
-	public void one(int no) throws Exception {
-		System.out.println("one요청됨.");
+	public void one2(String no, Model model) {
+		BbsVO bag = dao.one(no);
+		model.addAttribute("bag",bag);
 		System.out.println(no);
 		System.out.println(dao);
 
