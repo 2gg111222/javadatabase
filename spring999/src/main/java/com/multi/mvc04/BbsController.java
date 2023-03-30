@@ -1,5 +1,7 @@
 package com.multi.mvc04;
 
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -64,9 +66,11 @@ public class BbsController {
 
 	}
 	
-	@RequestMapping("list2")
-	public void list() {
-		
+	@RequestMapping("list2.multi")
+	public void list(Model model) {
+			ArrayList<BbsVO> list = dao.list(); //viwes까지만 가고 사라지니 list로 계속 써도 상관없음
+			model.addAttribute("list", list);
+			
 	}
 	
 	//https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=%EC%9E%90%EB%8F%99%EC%B0%A8

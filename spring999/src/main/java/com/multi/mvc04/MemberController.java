@@ -1,5 +1,7 @@
 package com.multi.mvc04;
 
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -73,9 +75,11 @@ public class MemberController {
 	}
 	
 	@RequestMapping("list")
-	public void list(MemberVO bag, MemberDAO33 dao) {
+	public void list(Model model) {
 		System.out.println("list요청됨.");
-		System.out.println(bag);
+		//Model은 컨트롤러의 list를 views/list.jsp까지만 전달할 수 있는 객체
+		ArrayList<MemberVO> list= dao.list();
+		model.addAttribute("list",list);
 	}
 	
 	//https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=%EC%9E%90%EB%8F%99%EC%B0%A8

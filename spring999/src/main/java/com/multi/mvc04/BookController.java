@@ -1,5 +1,7 @@
 package com.multi.mvc04;
 
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -45,4 +47,12 @@ public class BookController {
 		//views까지 전달 할 속성으로 추가해주세요.
 		
 	}
+	
+	@RequestMapping("list3")
+	public void list(Model model) {
+		ArrayList<BookDTO> list = dao.list(); //viwes까지만 가고 사라지니 list로 계속 써도 상관없음
+		model.addAttribute("list", list);
+			
+	}
+	
 }

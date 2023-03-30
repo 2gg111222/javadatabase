@@ -7,7 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h3>게시판 글쓰기. </h3>
+
+<h3>게시판 글쓰기. </h3><br>
+
+<a href = "list2.multi">게시판 전체정보</a><br>
 
 <form action = "one2.multi" method = "get">
 	no : <input name = "no" value = "1">
