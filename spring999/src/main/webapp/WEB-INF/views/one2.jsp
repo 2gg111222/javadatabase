@@ -1,16 +1,41 @@
+<%@page import="com.multi.mvc04.BbsVO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style>
+body {
+	background: yellow;
+}
+</style>
 </head>
 <body>
-<%--model의 속성으로 전달받은 bag은 EL로 출력한다. --%>
-${bag.no} <br><!-- 출력용(expression language-EL)  -->
-${bag.title} <br>
-${bag.content} <br>
-${bag.writer} <br>
+	<a href="bbs.jsp">처음페이지로</a>
+	<a href="list2">게시물 전체 목록페이지</a>
+	<hr color="red">
+	<%
+		//세션에서 값을 꺼내는 방법 
+	String id = (String) session.getAttribute("id");
+	//모델에서 값을 꺼내는 방법 
+	//model.addAttribute("bag", bag);
+	BbsVO bag = (BbsVO) request.getAttribute("bag");
+	String writer = bag.getWriter();
+	if (id.equals(writer)) {
+	%>
+	<a href="update2">
+		<button style="background: pink;">수정</button>
+	</a>
+	<a href="delete2.multi?no=${bag.no}">
+		<button style="background: pink;">삭제</button>
+	</a>
+	<hr color="red">
+	<%
+		}
+	%>
+	게시물검색 처리 요청이 완료되었습니다.
+	<br> ${bag.no}, ${bag.title}, ${bag.content}, ${bag.writer}
 </body>
 </html>

@@ -13,5 +13,8 @@ body {
 </head>
 <body>
 		로그인 처리 요청이 완료되었습니다.
+			<a href="login.jsp">
+	<button style="background: pink;" >로그인 화면으로 go</button>
+</a>
 </body>
 </html>

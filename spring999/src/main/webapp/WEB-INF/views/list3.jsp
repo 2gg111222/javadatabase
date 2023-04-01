@@ -33,8 +33,8 @@
 	</tr>
 	<c:forEach items = "${list}" var ="bag"  >
 	<tr>
-	<td class = "down"><a href="one3?no=${bag.id}">${bag.id}</td>
-	<td class = "down"><a href="one3?no=${bag.id}"> ${bag.name}</a></td>
+	<td class = "down">${bag.id}</td>
+	<td class = "down"><a href="one3?id=${bag.id}"> ${bag.name}</a></td>
 	<td class = "down"><a href="${bag.url}">${bag.url}</a></td>
 	<td class = "down"><img src = "resources/img/${bag.img}"></td>
 	</tr>

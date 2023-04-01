@@ -7,8 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	${id}님! 로그인 처리 성공!<br>
-	로그인 성공 <br>
-	<img src= "resources/img/ok.png " width = "250" height = "150">
+	뉴스 
+	<form action ="aaa">
+		댓글: <input name = "reply"><button>댓글달기</button>
+	</form>
+
 </body>
 </html>

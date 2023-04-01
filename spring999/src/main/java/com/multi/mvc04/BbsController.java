@@ -66,7 +66,7 @@ public class BbsController {
 
 	}
 	
-	@RequestMapping("list2.multi")
+	@RequestMapping("list2")
 	public void list(Model model) {
 			ArrayList<BbsVO> list = dao.list(); //viwes까지만 가고 사라지니 list로 계속 써도 상관없음
 			model.addAttribute("list", list);

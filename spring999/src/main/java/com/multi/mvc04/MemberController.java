@@ -2,11 +2,16 @@ package com.multi.mvc04;
 
 import java.util.ArrayList;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.SessionAttribute;
+
+import com.mysql.cj.Session;
 
 @Controller //스프링에서 제어하는 역할로 등록! 
 public class MemberController {
@@ -25,15 +30,18 @@ public class MemberController {
 	//써주어야 한다. 
 	
 	@RequestMapping("login")
-	public String login(MemberVO bag) throws Exception {
+	public String login(MemberVO bag, HttpSession session) throws Exception {
 			System.out.println(bag);
 			//dao를 이용해서 db처리할 예정
 			//view아래로 넘어가게 되어있음
 			//view아래 login.jsp를 호출하게 됨
 			int result = dao.login(bag);// 1, 0
 			if(result == 1) {
-				return "ok";
+				session.setAttribute("id", bag.getId());
+				return "ok"; //views아래 파일이름.jsp
 			}else {
+				//views아래가 아니고, webapp아래
+				//member.jsp로 가고 싶은 경우!
 				return "redirect:member.jsp";
 	}
 }

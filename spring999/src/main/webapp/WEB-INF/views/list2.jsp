@@ -38,12 +38,14 @@
 	<td class = "top">content</td>
 	<td class = "top">writer</td>
 	</tr>
+
 	<c:forEach items = "${list}" var="bag" begin="0" end="10" step="2">
 	<tr>
 	<td class = "down">${bag.no}</td><!-- 출력용(expression language-EL)  -->
 	<td class = "down">${bag.title}</td> 
 	<td class = "down">${bag.content}</td> 
 	<td class = "down">${bag.writer}</td>
+	
 	</tr>
 	</c:forEach>
 	</table>
