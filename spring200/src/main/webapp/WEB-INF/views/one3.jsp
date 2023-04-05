@@ -22,12 +22,12 @@
 				url : "insert4",
 				data : {
 					bbsno : ${bag.no},
-					content : content,
-					writer : writer
+					name : name,
+					url : url
 				},
 				success : function() {
 					alert('성공!')
-					$('#result').append("- " +content + "," + writer + "<br>")
+					$('#result').append("- " +name + "," + url + "<br>")
 					$('#reply').val('')
 					//val(): 입력한 값을 가지고 온다.
 					//val('~~~') : ~값을 input의 value에 넣는다.

@@ -19,15 +19,15 @@
 			content = $('#reply').val()
 			writer =  "apple" //$(id)--원래 이런 형식 근데 지금 없으니까 입력 
 			$.ajax({
-				url : "insert4",
+				url : "update4",
 				data : {
 					bbsno : ${bag.no},
 					content : content,
-					writer : writer
+			
 				},
 				success : function() {
-					alert('성공!')
-					$('#result').append("- " +content + "," + writer + "<br>")
+					alert('수정되었습니다!')
+					$('#result').append("- " +content +  "<br>")
 					$('#reply').val('')
 					//val(): 입력한 값을 가지고 온다.
 					//val('~~~') : ~값을 input의 value에 넣는다.
@@ -54,7 +54,7 @@ ${bag.no}, ${bag.title},
 ${bag.content}, ${bag.writer}
 <div id = "result">
 <c:forEach items="${list}" var="bag"> 
-	- ${bag.content}, ${bag.writer} <br>
+	- ${bag.content} <br>
 	</c:forEach>
 </div>
 </body>
